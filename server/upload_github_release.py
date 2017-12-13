@@ -184,7 +184,7 @@ def main():
     short_commit_hash = commit_hash[:7]
     filename = '/tmp/strapdown-server_%s_%s.%s.zip' % ( os_name, tag_name, short_commit_hash )
 
-    repo = Repo( 'chaitin', 'strapdown-zeta', token=oauth_token )
+    repo = Repo( 'yywing', 'strapdown-zeta', token=oauth_token )
 
     try:
         release = repo.create_release( tag_name )
